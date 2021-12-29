@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="viewModel"
+            type="kr.ac.koreatech.jejureceiptproject.viewmodel.MainActivityViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".view.activity.MainActivity">
+
+
+        <FrameLayout
+            android:id="@+id/fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:fragmentUrl="@{viewModel.currFragment}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/main_imageView_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="@{viewModel.navigation_onClick}"
+                android:src="@{viewModel.isMainActive ? @drawable/icon_main_black : @drawable/icon_main_gray}" />
+
+            <ImageView
+                android:id="@+id/main_imageView_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="@{viewModel.navigation_onClick}"
+                android:src="@{viewModel.isEditActive ? @drawable/icon_edit_black : @drawable/icon_edit_gray}" />
+
+            <ImageView
+                android:id="@+id/main_imageView_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="@{viewModel.navigation_onClick}"
+                android:src="@{viewModel.isMoreActive ? @drawable/icon_more_black : @drawable/icon_more_gray}" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

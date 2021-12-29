@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <!--        <import type="kr.ac.koreatech.jejureceiptproject.domain.CactusDTO" />-->
+
+        <variable
+            name="basketRecyclerViewModel"
+            type="kr.ac.koreatech.jejureceiptproject.viewmodel.BasketRecyclerViewModel" />
+
+        <variable
+            name="cactusRecyclerViewModel"
+            type="kr.ac.koreatech.jejureceiptproject.viewmodel.CactusRecyclerViewModel" />
+
+        <variable
+            name="viewModel"
+            type="kr.ac.koreatech.jejureceiptproject.viewmodel.MainFragmentViewModel" />
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/mainFragmentDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="20"
+            tools:context=".view.fragment.MainFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="@{viewModel.selectCactus}"
+                    android:textColor="@color/blueFacebook"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{viewModel.selectCount}"
+                    android:textColor="@color/blueFacebook"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cactusRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                app:verAdapter="@{cactusRecyclerViewModel.adatper}" />
+
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="4">
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_weight="1"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/dialog_button_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="3"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/dialog_button_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="4"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="6"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/dialog_button_7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="7"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="9"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/dialog_button_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:onLongClick="@{viewModel.dialogBtn_onLongClick}"
+                        android:text="←"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dialog_button_enter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dia_bg"
+                        android:onClick="@{viewModel.dialogBtn_onClick}"
+                        android:text="⏎"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+        <!-- drawerLayout -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="20">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/basketRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                app:verAdapter="@{basketRecyclerViewModel.adatper}" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:onClick="@{viewModel.clearBtn_onClick}"
+                    android:text="초기화"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:onClick="@{viewModel.printBtn_onClick}"
+                    android:text="인쇄하기"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="decimal"
+            type="kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.BasketRecyclerViewAdatper.ItemViewHolder.Transaction" />
+
+        <variable
+            name="viewModel"
+            type="kr.ac.koreatech.jejureceiptproject.viewmodel.BasketRecyclerViewModel" />
+
+        <variable
+            name="pos"
+            type="Integer" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="7.5"
+            android:gravity="center"
+            android:text="@{viewModel.getName(pos)}"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:gravity="center"
+            android:text="@{decimal.price}"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@{viewModel.getCount(pos).toString()}"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:gravity="center"
+            android:text="@{decimal.total}"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</layout>

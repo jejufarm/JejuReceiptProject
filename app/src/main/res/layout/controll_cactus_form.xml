@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="decimal"
+            type="kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.CactusRecyclerViewAdapter.ItemViewHolder.Transaction" />
+
+        <variable
+            name="viewModel"
+            type="kr.ac.koreatech.jejureceiptproject.viewmodel.CactusRecyclerViewModel" />
+
+        <variable
+            name="pos"
+            type="Integer" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@{viewModel.getName(pos)}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@{decimal.price}"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</layout>
