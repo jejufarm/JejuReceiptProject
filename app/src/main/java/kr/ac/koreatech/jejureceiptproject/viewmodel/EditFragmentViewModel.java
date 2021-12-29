@@ -5,11 +5,18 @@ import android.view.View;
 import androidx.databinding.ObservableField;
 
 import kr.ac.koreatech.jejureceiptproject.SQLite.SQLiteControl;
+import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.CactusRecyclerViewAdapter;
+import kr.ac.koreatech.jejureceiptproject.databinding.FragmentEditBinding;
 import kr.ac.koreatech.jejureceiptproject.domain.CactusDTO;
 
 public class EditFragmentViewModel {
     private static EditFragmentViewModel instance;
     private CactusDTO selected_cactus = null;
+    private static FragmentEditBinding binding;
+
+    public static void setInstnace(FragmentEditBinding binding) {
+        EditFragmentViewModel.binding = binding;
+    }
 
     public static EditFragmentViewModel getInstance() {
         if (instance == null)
@@ -65,7 +72,7 @@ public class EditFragmentViewModel {
                 cactusName.set("");
                 cactusPrice.set("");
                 CactusRecyclerViewModel.getInstance().getCacutList();
-
+                binding.cactusRecyclerView.scrollToPosition(CactusRecyclerViewModel.getInstance().getAdatper().getItemCount() - 1);
             }
         } catch (Exception ex) {
             ex.printStackTrace();

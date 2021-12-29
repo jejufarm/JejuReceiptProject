@@ -38,7 +38,7 @@ public class EditFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_edit, container, false);
-
+        EditFragmentViewModel.setInstnace(binding);
         binding.setViewModel(EditFragmentViewModel.getInstance());
         binding.setCactusRecyclerViewModel(CactusRecyclerViewModel.getInstance());
 
@@ -48,8 +48,6 @@ public class EditFragment extends Fragment {
                 new RecyclerItemClickListener(getContext(), binding.cactusRecyclerView, new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-
-
                         EditFragmentViewModel.getInstance().setSelectedPos(position);
                         EditFragmentViewModel.getInstance().setEdit(true);
                     }
