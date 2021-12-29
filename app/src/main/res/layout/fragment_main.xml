@@ -262,6 +262,28 @@
             android:padding="10dp"
             android:weightSum="20">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{viewModel.sumCount}"
+                    android:textColor="@color/blueFacebook" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{viewModel.sumTotal}"
+                    android:textColor="@color/blueFacebook" />
+            </LinearLayout>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/basketRecyclerView"
                 android:layout_width="match_parent"

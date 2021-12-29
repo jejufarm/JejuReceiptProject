@@ -26,10 +26,14 @@ public class MainFragmentViewModel {
 
     private ObservableField<String> selectCactus = new ObservableField<>();
     private ObservableField<String> selectCount = new ObservableField<>();
+    private ObservableField<String> sumCount = new ObservableField<>();
+    private ObservableField<String> sumTotal = new ObservableField<>();
 
     public MainFragmentViewModel() {
         selectCactus.set("");
         selectCount.set("");
+        setSumCount("0");
+        setSumTotal("0");
     }
 
     public ObservableField<String> getSelectCactus() {
@@ -57,6 +61,13 @@ public class MainFragmentViewModel {
     public void removeSelectCount() {
         if (getSelectCount().get() != null && getSelectCount().get().length() > 0) {
             this.selectCount.set(getSelectCount().get().substring(0, getSelectCount().get().length() - 1));
+            Integer count = 0, total = 0;
+            for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
+                count += cactus.getCount();
+                total += cactus.getTotal();
+            }
+            setSumTotal(total.toString());
+            setSumCount(count.toString());
         }
     }
 
@@ -70,6 +81,27 @@ public class MainFragmentViewModel {
                 this.selectCount.set(selectCount);
 
         }
+    }
+
+    public ObservableField<String> getSumCount() {
+        return sumCount;
+    }
+
+    public void setSumCount(String sumCount) {
+        this.sumCount.set(sumCount);
+    }
+
+    public ObservableField<String> getSumTotal() {
+        try {
+            sumTotal.set(new DecimalFormat("###,###").format(Integer.parseInt(sumTotal.get())));
+        }catch (NumberFormatException ex){
+
+        }
+        return sumTotal;
+    }
+
+    public void setSumTotal(String sumTotal) {
+        this.sumTotal.set(sumTotal);
     }
 
     public boolean dialogBtn_onLongClick(View view) {
@@ -134,6 +166,14 @@ public class MainFragmentViewModel {
                     selectCactusDTO = null;
                     this.setSelectCactus(null);
                     this.selectCount.set("");
+
+                    Integer count = 0, total = 0;
+                    for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
+                        count += cactus.getCount();
+                        total += cactus.getTotal();
+                    }
+                    setSumTotal(total.toString());
+                    setSumCount(count.toString());
                 }
                 break;
             }
@@ -142,6 +182,8 @@ public class MainFragmentViewModel {
 
     public void clearBtn_onClick(View view) {
         BasketRecyclerViewModel.getInstance().clear();
+        setSumCount("0");
+        setSumTotal("0");
     }
 
     public void printBtn_onClick(View view) {
