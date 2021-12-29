@@ -39,7 +39,7 @@ public class CactusRecyclerViewModel {
         return adapter;
     }
 
-    public CactusDTO getItem(int pos){
+    public CactusDTO getItem(int pos) {
         return items.get(pos);
     }
 
@@ -55,4 +55,35 @@ public class CactusRecyclerViewModel {
         return items.get(pos).getPrice();
     }
 
+    public boolean append(CactusDTO cactusDTO) {
+        items.add(cactusDTO);
+        return true;
+    }
+
+    public boolean remove(long uid) {
+        int idx = 0;
+        for (CactusDTO item : items) {
+            if (item.getUid() == uid)
+                break;
+            idx++;
+        }
+        items.remove(idx);
+        return true;
+    }
+
+    public boolean update(long uid, String name, Integer price) throws Exception {
+        CactusDTO cactus = null;
+        for (CactusDTO item : items) {
+            if (item.getUid() == uid) {
+                cactus = item;
+                break;
+            }
+        }
+        if (cactus == null)
+            return false;
+
+        cactus.setName(name);
+        cactus.setPrice(price);
+        return true;
+    }
 }
