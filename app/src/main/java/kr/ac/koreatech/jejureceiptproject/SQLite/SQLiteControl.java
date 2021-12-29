@@ -81,37 +81,47 @@ public class SQLiteControl implements Serializable {
         }
     }
 
-    public boolean delete(int uid) {
-//        try {
-//            if (ExecuteSQL("DELETE FROM cactuslist WHERE uid = " + uid)) {
-//                ExecuteSQL("UPDATE cactus_list set uid = uid - 1 WHERE  uid > " + uid);
-//            }
-//            return true;
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//            throw ex;
-//        }
+    public boolean delete(CactusDTO cactus) {
+        try {
+            if (executeSQL("DELETE FROM cactus WHERE uid = " + cactus.getUid())) {
+                executeSQL("UPDATE cactus SET `order` = `order` - 1 WHERE  `order` > " + cactus.getOrder());
+                return true;
+
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        }
         return false;
     }
 
     public boolean update(CactusDTO cactus) {
-//        try {
-//            if (cactus.getUid() < 0)
-//                return false;
-//            ExecuteSQL("SELECT * FROM CACTUSLIST where cactus_uid = " + cactus.getUid());
-//            ArrayList<CactusDTO> temp = (ArrayList<CactusDTO>) GetData("SELECT * FROM CACTUSLIST where cactus_uid = " + cactus.getUid());
-//            if (temp.size() > 0) {
-//                ExecuteSQL("UPDATE CACTUSLIST SET cactus_name = '" + cactus.getName() + "'," +
-//                        "cactus_price = " + cactus.getPrice() + " WHERE cactus_uid = " + cactus.getUid() + ";");
-//            }
-//            return true;
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//            throw ex;
-//        }
-        return false;
+        try {
+
+            return executeSQL("UPDATE cactus SET name = '" + cactus.getName() + "'," +
+                    "price = " + cactus.getPrice() + " WHERE uid = " + cactus.getUid() + ";");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+//        return false;
     }
 
+    public boolean swipe(CactusDTO from_cactus, CactusDTO to_cactus) {
+        try {
+            System.out.println(from_cactus.getOrder() + " " + to_cactus.getOrder());
+            if (executeSQL("UPDATE cactus SET `order` = " + to_cactus.getOrder() +
+                    " WHERE uid = " + to_cactus.getUid() + ";") &&
+                    executeSQL("UPDATE cactus SET `order` = " + from_cactus.getOrder() +
+                            " WHERE uid = " + from_cactus.getUid() + ";")) {
+                return true;
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        }
+        return false;
+    }
 
     public boolean executeSQL(String sql) {
         try {

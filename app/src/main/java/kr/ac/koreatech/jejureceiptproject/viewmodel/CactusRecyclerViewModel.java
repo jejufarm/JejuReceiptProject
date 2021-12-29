@@ -32,6 +32,12 @@ public class CactusRecyclerViewModel {
 //        test();
     }
 
+    private void test() {
+        for (int i = 0; i < 10; i++) {
+            items.add(new CactusDTO(i, "테스트" + i, i * 10000 + 10000, i));
+        }
+        onCreate();
+    }
 
     public void onCreate() {
         adapter.notifyDataSetChanged();
@@ -55,6 +61,10 @@ public class CactusRecyclerViewModel {
 
     public Integer getPrice(int pos) {
         return items.get(pos).getPrice();
+    }
+
+    public List<CactusDTO> getItem() {
+        return items;
     }
 
     public boolean append(CactusDTO cactusDTO) {

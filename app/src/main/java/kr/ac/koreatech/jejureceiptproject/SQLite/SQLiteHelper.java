@@ -30,7 +30,7 @@ public class SQLiteHelper extends android.database.sqlite.SQLiteOpenHelper imple
                 "`uid` INTEGER PRIMARY KEY autoincrement," +
                 "`name` varchar(100) NOT NULL DEFAULT ''," +
                 "`price` INTEGER NOT NULL," +
-                "`order` INTEGER NOT NULL UNIQUE);";
+                "`order` INTEGER NOT NULL);";
         db.execSQL(create_query);
     }
 

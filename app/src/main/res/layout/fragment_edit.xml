@@ -43,6 +43,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="7"
                     android:hint="제품 이름"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
                     android:text="@={viewModel.cactusName}" />
 
                 <EditText
@@ -50,7 +52,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:hint="가격(단가)"
+                    android:imeOptions="actionDone"
                     android:inputType="number"
+                    android:singleLine="true"
                     android:text="@={viewModel.cactusPrice}" />
             </LinearLayout>
 
@@ -65,13 +69,6 @@
                     android:layout_weight="1"
                     android:onClick="@{viewModel.isEdit ? viewModel.updateButton : viewModel.addButton}"
                     android:text="@{viewModel.isEdit ? @string/editMode : @string/addMode}" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="@{viewModel.deleteButton}"
-                    android:text="삭제" />
 
                 <Button
                     android:layout_width="0dp"

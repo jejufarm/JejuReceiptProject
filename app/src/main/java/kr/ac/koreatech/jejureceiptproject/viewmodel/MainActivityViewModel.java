@@ -82,6 +82,10 @@ public class MainActivityViewModel {
 
     //region event
     public void navigation_onClick(View v) {
+        // 키패드를 강제로 내려줌.
+        if (MainActivity.getImm() != null) {
+            MainActivity.getImm().hideSoftInputFromWindow(v.getWindowToken(), 0);
+        }
         switch (v.getId()) {
             case R.id.main_imageView_main: {
                 currFragment.set(myFragment[0]);
