@@ -97,6 +97,7 @@ public class CactusRecyclerViewModel {
             for (CactusDTO item : SQLiteControl.getInstance().getCacutsList()) {
                 append(item);
             }
+            adapter.notifyDataSetChanged();
         } catch (Exception ex) {
             ex.printStackTrace();
         }

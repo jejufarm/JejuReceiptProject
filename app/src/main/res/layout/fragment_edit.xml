@@ -29,7 +29,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="110dp"
             android:orientation="vertical"
             android:weightSum="20">
 
