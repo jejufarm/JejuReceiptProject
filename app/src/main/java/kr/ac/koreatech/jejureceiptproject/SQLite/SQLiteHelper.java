@@ -8,6 +8,17 @@ import androidx.annotation.Nullable;
 import java.io.Serializable;
 
 public class SQLiteHelper extends android.database.sqlite.SQLiteOpenHelper implements Serializable {
+    private static SQLiteHelper sqLiteHelper;
+
+    public static void setInstance(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+        sqLiteHelper = new SQLiteHelper(context, name, factory, version);
+    }
+
+    public static SQLiteHelper getInstance() throws Exception {
+        if (sqLiteHelper == null)
+            throw new Exception("set이 필요합니다.");
+        return sqLiteHelper;
+    }
 
     public SQLiteHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -16,13 +27,10 @@ public class SQLiteHelper extends android.database.sqlite.SQLiteOpenHelper imple
     @Override
     public void onCreate(SQLiteDatabase db) {
         String create_query = "CREATE TABLE if not exists `cactus`(" +
-                "`uid` bigint(20) unsigned NOT NULL AUTO_INCREMENT," +
+                "`uid` INTEGER PRIMARY KEY autoincrement," +
                 "`name` varchar(100) NOT NULL DEFAULT ''," +
-                "`price` int(11) unsigned NOT NULL," +
-                "`order` int(11) unsigned NOT NULL," +
-                "PRIMARY KEY (`uid`)," +
-                "UNIQUE KEY `order` (`order`)," +
-                "KEY `order_2` (`order`));";
+                "`price` INTEGER NOT NULL," +
+                "`order` INTEGER NOT NULL UNIQUE);";
         db.execSQL(create_query);
     }
 

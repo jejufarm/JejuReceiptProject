@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import kr.ac.koreatech.jejureceiptproject.R;
 import kr.ac.koreatech.jejureceiptproject.databinding.FragmentEditBinding;
+import kr.ac.koreatech.jejureceiptproject.viewmodel.CactusRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.EditFragmentViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.MainFragmentViewModel;
 
@@ -34,6 +35,7 @@ public class EditFragment extends Fragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_edit, container, false);
 
         binding.setViewModel(EditFragmentViewModel.getInstance());
+        binding.setCactusRecyclerViewModel(CactusRecyclerViewModel.getInstance());
         return binding.getRoot();
     }
 }

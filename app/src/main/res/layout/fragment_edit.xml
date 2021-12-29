@@ -42,14 +42,16 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="7"
-                    android:hint="제품 이름" />
+                    android:hint="제품 이름"
+                    android:text="@={viewModel.cactusName}" />
 
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:hint="가격(단가)"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:text="@={viewModel.cactusPrice}" />
             </LinearLayout>
 
             <LinearLayout

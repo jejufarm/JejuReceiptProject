@@ -1,25 +1,28 @@
 package kr.ac.koreatech.jejureceiptproject.domain;
 
 public class CactusDTO {
-    private Long uid;
+    private Integer uid;
     private String name;
     private Integer price;
+    private Integer order;
 
     public CactusDTO() {
 
     }
 
-    public CactusDTO(Long uid, String name, Integer price) {
+
+    public CactusDTO(Integer uid, String name, Integer price, Integer order) {
         this.uid = uid;
         this.name = name;
         this.price = price;
+        this.order = order;
     }
 
-    public Long getUid() {
+    public Integer getUid() {
         return uid;
     }
 
-    public void setUid(Long uid) {
+    public void setUid(Integer uid) {
         this.uid = uid;
     }
 
@@ -37,5 +40,13 @@ public class CactusDTO {
 
     public void setPrice(Integer price) {
         this.price = price;
+    }
+
+    public Integer getOrder() {
+        return order;
+    }
+
+    public void setOrder(Integer order) {
+        this.order = order;
     }
 }

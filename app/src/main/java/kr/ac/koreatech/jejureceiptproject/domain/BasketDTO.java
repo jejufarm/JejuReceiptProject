@@ -10,8 +10,8 @@ public class BasketDTO extends CactusDTO {
 
     }
 
-    public BasketDTO(Long uid, String name, Integer price, Integer count) {
-        super(uid, name, price);
+    public BasketDTO(Integer uid, String name, Integer price, Integer count) {
+        super(uid, name, price, -1);
         this.count = count;
         this.total = price * count;
     }

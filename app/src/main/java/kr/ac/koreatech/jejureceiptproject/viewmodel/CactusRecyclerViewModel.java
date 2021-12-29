@@ -3,6 +3,8 @@ package kr.ac.koreatech.jejureceiptproject.viewmodel;
 import java.util.ArrayList;
 import java.util.List;
 
+import kr.ac.koreatech.jejureceiptproject.SQLite.SQLiteControl;
+import kr.ac.koreatech.jejureceiptproject.SQLite.SQLiteHelper;
 import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.CactusRecyclerViewAdapter;
 import kr.ac.koreatech.jejureceiptproject.domain.CactusDTO;
 
@@ -85,5 +87,18 @@ public class CactusRecyclerViewModel {
         cactus.setName(name);
         cactus.setPrice(price);
         return true;
+    }
+
+    public void getCacutList() {
+        try {
+            items.clear();
+
+            SQLiteControl.setInstance(SQLiteHelper.getInstance());
+            for (CactusDTO item : SQLiteControl.getInstance().getCacutsList()) {
+                append(item);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }
