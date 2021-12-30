@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/border_all.xml" value="1.0451127819548873" />
+        <entry key="app/src/main/res/drawable/border_right.xml" value="1.0451127819548873" />
         <entry key="app/src/main/res/drawable/btn_dia_bg.xml" value="0.415625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_print_form.xml" value="0.25" />
         <entry key="app/src/main/res/layout/controll_basket_form.xml" value="0.319140625" />
         <entry key="app/src/main/res/layout/controll_cactus_form.xml" value="0.2330665024630542" />
         <entry key="app/src/main/res/layout/controll_count_form.xml" value="0.25" />
@@ -14,6 +17,7 @@
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.319140625" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.33497536945812806" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.33497536945812806" />
+        <entry key="app/src/main/res/layout/printform.xml" value="0.313671875" />
         <entry key="app/src/main/res/menu/main_fragment_menu.xml" value="0.403515625" />
       </map>
     </option>

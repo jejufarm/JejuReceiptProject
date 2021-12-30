@@ -264,7 +264,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -273,7 +273,9 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@{viewModel.sumCount}"
-                    android:textColor="@color/blueFacebook" />
+                    android:textColor="@color/blueFacebook"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -281,7 +283,9 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@{viewModel.sumTotal}"
-                    android:textColor="@color/blueFacebook" />
+                    android:textColor="@color/blueFacebook"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView

@@ -1,21 +1,27 @@
 package kr.ac.koreatech.jejureceiptproject.viewmodel;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.databinding.ObservableField;
 
 import java.text.DecimalFormat;
 
 import kr.ac.koreatech.jejureceiptproject.R;
+import kr.ac.koreatech.jejureceiptproject.databinding.FragmentMainBinding;
 import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
 import kr.ac.koreatech.jejureceiptproject.domain.CactusDTO;
 import kr.ac.koreatech.jejureceiptproject.view.activity.MainActivity;
+import kr.ac.koreatech.jejureceiptproject.view.activity.PrintFormActivity;
 import kr.ac.koreatech.jejureceiptproject.view.fragment.MainFragment;
 
 
 public class MainFragmentViewModel {
     private static MainFragmentViewModel instance;
     private CactusDTO selectCactusDTO;
+
 
     public static MainFragmentViewModel getInstance() {
         if (instance == null) {
@@ -94,7 +100,7 @@ public class MainFragmentViewModel {
     public ObservableField<String> getSumTotal() {
         try {
             sumTotal.set(new DecimalFormat("###,###").format(Integer.parseInt(sumTotal.get())));
-        }catch (NumberFormatException ex){
+        } catch (NumberFormatException ex) {
 
         }
         return sumTotal;
@@ -187,6 +193,8 @@ public class MainFragmentViewModel {
     }
 
     public void printBtn_onClick(View view) {
-
+        Context context = view.getContext();
+        Intent intent = new Intent(context, PrintFormActivity.class);
+        context.startActivity(intent);
     }
 }
