@@ -25,11 +25,16 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import kr.ac.koreatech.jejureceiptproject.R;
 import kr.ac.koreatech.jejureceiptproject.databinding.ActivityPrintFormBinding;
+import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
+import kr.ac.koreatech.jejureceiptproject.domain.ReceiptDTO;
 import kr.ac.koreatech.jejureceiptproject.util.MediaScanner;
+import kr.ac.koreatech.jejureceiptproject.viewmodel.BasketRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.MainActivityViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.PrintFormViewModel;
 
@@ -41,7 +46,21 @@ public class PrintFormActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_print_form);
-        binding.setViewModel(PrintFormViewModel.getInstance());
+        ArrayList<ReceiptDTO> items = new ArrayList<>();
+        int idx = 0;
+        int total = 0, count = 0;
+        for (BasketDTO item :
+                BasketRecyclerViewModel.getInstance().getItems()) {
+            items.add(new ReceiptDTO(++idx, item.getName(), item.getCount(), item.getPrice(), item.getTotal(), ""));
+            total += item.getTotal();
+            count += item.getCount();
+        }
+        binding.setViewModel(PrintFormViewModel.getInstance(count, total));
+
+        for (int i = idx; i < 21; i++) {
+            items.add(new ReceiptDTO(i + 1, "", null, null, null, ""));
+        }
+        binding.setDatas(items);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); // 상태바 없앰(전체화면)
         getSupportActionBar().hide(); // 액션바 숨기기
         one = false;
@@ -91,8 +110,8 @@ public class PrintFormActivity extends AppCompatActivity {
 
         Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(),
                 Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
-        view.draw(canvas);
+//        Canvas canvas = new Canvas(bitmap);
+//        view.draw(canvas);
         return bitmap;
     }
 
@@ -110,7 +129,7 @@ public class PrintFormActivity extends AppCompatActivity {
             view.draw(canvas);
             photoPrinter.printBitmap("droids.jpg - test print", bitmap);
         } else {
-            finish();
+//            finish();
         }
     }
 }

@@ -1,15 +1,15 @@
 package kr.ac.koreatech.jejureceiptproject.domain;
 
 public class ReceiptDTO {
-    private Integer number;
+    private Integer order;
     private String name;
     private Integer count;
     private Integer price;
     private Integer total;
     private String extra;
 
-    public ReceiptDTO(Integer number, String name, Integer count, Integer price, Integer total, String extra) {
-        this.number = number;
+    public ReceiptDTO(Integer order, String name, Integer count, Integer price, Integer total, String extra) {
+        this.order = order;
         this.name = name;
         this.count = count;
         this.price = price;
@@ -17,12 +17,12 @@ public class ReceiptDTO {
         this.extra = extra;
     }
 
-    public Integer getNumber() {
-        return number;
+    public Integer getOrder() {
+        return order;
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setOrder(Integer number) {
+        this.order = number;
     }
 
     public String getName() {
