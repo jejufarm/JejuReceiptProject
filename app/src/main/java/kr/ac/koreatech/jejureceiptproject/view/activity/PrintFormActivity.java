@@ -124,7 +124,7 @@ public class PrintFormActivity extends AppCompatActivity {
     public Uri getImageUri(Context inContext, Bitmap inImage) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
-        String path = MediaStore.Images.Media.insertImage(inContext.getContentResolver(), inImage, "Title", null);
+        String path = MediaStore.Images.Media.insertImage(inContext.getContentResolver(), inImage, new SimpleDateFormat("yyyy년MM월dd일 HH시mm분ss초").format(new Date()), null);
         return Uri.parse(path);
     }
 
@@ -142,7 +142,7 @@ public class PrintFormActivity extends AppCompatActivity {
             canvas.translate(view.getScrollX(), view.getScaleY());
             canvas.drawARGB(0, 0, 0, 0);
             view.draw(canvas);
-//패키지명은 연락처  액티비티명은 최근기록 입력
+            //패키지명은 연락처  액티비티명은 최근기록 입력
             Intent intent23 = new Intent();
             ArrayList<Uri> imageUris = new ArrayList<>();
             imageUris.add(getImageUri(this, bitmap));
