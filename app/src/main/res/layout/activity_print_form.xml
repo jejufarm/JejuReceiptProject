@@ -22,18 +22,21 @@
         android:id="@+id/linear"
         android:layout_width="148mm"
         android:layout_height="210mm"
+        android:background="@color/white"
         tools:context=".view.activity.PrintFormActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:orientation="horizontal"
             android:weightSum="21">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -45,7 +48,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/white" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -61,7 +65,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/white" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -183,7 +188,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/white" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -196,6 +202,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="7"
+                        android:background="@color/white"
                         android:gravity="center"
                         android:textSize="20sp" />
 

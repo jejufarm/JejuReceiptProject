@@ -21,6 +21,7 @@ import kr.ac.koreatech.jejureceiptproject.R;
 import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.BasketRecyclerViewAdatper;
 import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.RecyclerItemClickListener;
 import kr.ac.koreatech.jejureceiptproject.databinding.FragmentMainBinding;
+import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.BasketRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.CactusRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.CountRecyclerViewModel;
@@ -112,6 +113,13 @@ public class MainFragment extends Fragment {
                     public void onLongItemClick(View view, int position) {
                         Toast.makeText(getContext(), "[" + BasketRecyclerViewModel.getInstance().getItem(position).toString() + "]가 삭제되었습니다.", Toast.LENGTH_SHORT).show();
                         BasketRecyclerViewModel.getInstance().remove(position);
+                        Integer count = 0, total = 0;
+                        for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
+                            count += cactus.getCount();
+                            total += cactus.getTotal();
+                        }
+                        MainFragmentViewModel.getInstance().setSumTotal(total.toString());
+                        MainFragmentViewModel.getInstance().setSumCount(count.toString());
                     }
                 }));
         binding.setBasketRecyclerViewModel(BasketRecyclerViewModel.getInstance());

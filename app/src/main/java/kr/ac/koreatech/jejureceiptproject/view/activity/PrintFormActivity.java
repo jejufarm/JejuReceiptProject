@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.print.PrintHelper;
 
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.print.PrintAttributes;
+import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -19,11 +23,13 @@ import android.widget.LinearLayout;
 
 import com.vipul.hp_hp.library.Layout_to_Image;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -115,19 +121,38 @@ public class PrintFormActivity extends AppCompatActivity {
         return bitmap;
     }
 
+    public Uri getImageUri(Context inContext, Bitmap inImage) {
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+        String path = MediaStore.Images.Media.insertImage(inContext.getContentResolver(), inImage, "Title", null);
+        return Uri.parse(path);
+    }
+
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         if (!one) {
             one = true;
             PrintHelper photoPrinter = new PrintHelper(this);
             photoPrinter.setScaleMode(PrintHelper.SCALE_MODE_FIT);
+            photoPrinter.setColorMode(PrintHelper.COLOR_MODE_MONOCHROME);
+            photoPrinter.setOrientation(PrintHelper.ORIENTATION_LANDSCAPE);
             View view = binding.linear;
             Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_4444);
             Canvas canvas = new Canvas(bitmap);
             canvas.translate(view.getScrollX(), view.getScaleY());
             canvas.drawARGB(0, 0, 0, 0);
             view.draw(canvas);
-            photoPrinter.printBitmap("droids.jpg - test print", bitmap);
+//패키지명은 연락처  액티비티명은 최근기록 입력
+            Intent intent23 = new Intent();
+            ArrayList<Uri> imageUris = new ArrayList<>();
+            imageUris.add(getImageUri(this, bitmap));
+            imageUris.add(getImageUri(this, bitmap));
+            intent23.setAction(Intent.ACTION_SEND_MULTIPLE);
+            intent23.putParcelableArrayListExtra(Intent.EXTRA_STREAM, imageUris);
+            intent23.setType("image/*");
+            startActivity(Intent.createChooser(intent23, "프린트"));
+            finish();
+//            photoPrinter.printBitmap("droids.jpg - test print", bitmap);
         } else {
 //            finish();
         }
