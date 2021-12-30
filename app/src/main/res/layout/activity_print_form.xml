@@ -46,6 +46,8 @@
                     android:background="@drawable/border_all"
                     android:gravity="center"
                     android:text="거 래 명 세 서"
+
+                    android:textColor="@color/black"
                     android:textSize="100sp" />
 
                 <LinearLayout
@@ -68,6 +70,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="상호"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -77,6 +80,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="제주농원"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -86,6 +90,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="성      명"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -95,6 +100,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="최창수 (인)"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
                 </LinearLayout>
 
@@ -113,6 +119,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="010-3399-7137"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -122,6 +129,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="계      좌"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -131,6 +139,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="농협 217-05252-005911"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
                 </LinearLayout>
 
@@ -149,6 +158,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="작 성 년 월 일"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -158,6 +168,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="@{viewModel.now_time}"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
                 </LinearLayout>
 
@@ -187,6 +198,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="@{viewModel.sum_count}"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -196,6 +208,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="합 계"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -205,6 +218,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="@{viewModel.sum_total}"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -223,6 +237,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="번호"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -232,6 +247,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="품명"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -241,6 +257,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="수량"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -250,6 +267,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="단가"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -259,6 +277,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="가격"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -268,6 +287,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="비고"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -286,6 +306,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -295,6 +316,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -304,6 +326,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -313,6 +336,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -322,6 +346,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -331,384 +356,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="2"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="3"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="4"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="5"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="6"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="7"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -727,6 +375,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -736,6 +385,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -745,6 +395,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -754,6 +405,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -763,6 +415,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -772,6 +425,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -790,6 +444,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -799,6 +454,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -808,6 +464,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -817,6 +474,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -826,6 +484,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -835,6 +494,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -853,6 +513,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -862,6 +523,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -871,6 +533,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -880,6 +543,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -889,6 +553,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -898,6 +563,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -916,6 +582,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -925,6 +592,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -934,6 +602,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -943,6 +612,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -952,6 +622,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -961,6 +632,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -979,6 +651,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -988,6 +661,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -997,6 +671,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1006,6 +681,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1015,6 +691,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1024,6 +701,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1042,6 +720,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1051,6 +730,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1060,6 +740,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1069,6 +750,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1078,6 +760,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1087,6 +770,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1105,6 +789,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1114,6 +799,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1123,6 +809,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1132,6 +819,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1141,6 +829,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1150,6 +839,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1168,6 +858,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1177,6 +868,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1186,6 +878,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1195,6 +888,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1204,6 +898,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1213,6 +908,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1231,6 +927,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1240,6 +937,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1249,6 +947,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1258,6 +957,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1267,6 +967,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1276,6 +977,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1294,6 +996,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1303,6 +1006,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1312,6 +1016,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1321,6 +1026,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1330,6 +1036,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1339,6 +1046,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1357,6 +1065,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1366,6 +1075,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1375,6 +1085,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1384,6 +1095,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1393,6 +1105,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1402,6 +1115,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1420,6 +1134,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1429,6 +1144,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1438,6 +1154,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1447,6 +1164,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1456,6 +1174,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1465,6 +1184,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1483,6 +1203,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1492,6 +1213,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1501,6 +1223,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1510,6 +1233,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1519,6 +1243,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1528,6 +1253,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -1546,6 +1272,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text="1"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1555,6 +1282,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1564,6 +1292,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1573,6 +1302,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1582,6 +1312,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -1591,9 +1322,425 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"

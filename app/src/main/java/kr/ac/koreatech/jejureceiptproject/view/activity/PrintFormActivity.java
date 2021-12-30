@@ -17,6 +17,8 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import com.vipul.hp_hp.library.Layout_to_Image;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -91,7 +93,6 @@ public class PrintFormActivity extends AppCompatActivity {
                 Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         view.draw(canvas);
-        saveBitmapToJpg(bitmap, "newimg");
         return bitmap;
     }
 
@@ -101,14 +102,15 @@ public class PrintFormActivity extends AppCompatActivity {
             one = true;
             PrintHelper photoPrinter = new PrintHelper(this);
             photoPrinter.setScaleMode(PrintHelper.SCALE_MODE_FIT);
-
-            FrameLayout frameLayout = binding.linear;
-            frameLayout.setDrawingCacheEnabled(true);
-            frameLayout.buildDrawingCache();
-            Bitmap bm = frameLayout.getDrawingCache();
-            saveBitmapToJpg(bm, "newimg");
-            photoPrinter.printBitmap("droids.jpg - test print", bm);
+            View view = binding.linear;
+            Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_4444);
+            Canvas canvas = new Canvas(bitmap);
+            canvas.translate(view.getScrollX(), view.getScaleY());
+            canvas.drawARGB(0, 0, 0, 0);
+            view.draw(canvas);
+            photoPrinter.printBitmap("droids.jpg - test print", bitmap);
+        } else {
+            finish();
         }
-
     }
 }

@@ -1,8 +1,23 @@
 package kr.ac.koreatech.jejureceiptproject.viewmodel;
 
-import androidx.databinding.ObservableField;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.View;
+import android.widget.FrameLayout;
 
+import androidx.databinding.ObservableField;
+import androidx.print.PrintHelper;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.List;
+
+import kr.ac.koreatech.jejureceiptproject.view.activity.PrintFormActivity;
 
 public class PrintFormViewModel {
     private static PrintFormViewModel instance;
@@ -41,5 +56,4 @@ public class PrintFormViewModel {
     public void setSum_total(String sum_total) {
         this.sum_total.set(sum_total);
     }
-
 }
