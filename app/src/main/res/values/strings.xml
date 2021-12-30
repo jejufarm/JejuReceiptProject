@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">JejuReceiptProject</string>
+    <string name="app_name">제주농원</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="addMode">추가</string>
     <string name="editMode">수정</string>
-
 </resources>
