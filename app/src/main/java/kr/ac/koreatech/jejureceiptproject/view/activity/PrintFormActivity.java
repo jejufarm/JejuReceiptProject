@@ -61,7 +61,7 @@ public class PrintFormActivity extends AppCompatActivity {
             total += item.getTotal();
             count += item.getCount();
         }
-        binding.setViewModel(PrintFormViewModel.getInstance(count, total));
+        binding.setViewModel(new PrintFormViewModel(count, total));
 
         for (int i = idx; i < 21; i++) {
             items.add(new ReceiptDTO(i + 1, "", null, null, null, ""));
