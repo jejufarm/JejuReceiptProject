@@ -46,6 +46,7 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false);
         binding.setViewModel(MainFragmentViewModel.getInstance());
+        getActivity().setTitle("제주농원 영수증 메인 화면");
         setHasOptionsMenu(true);
         initCactusList();
         initBasket();

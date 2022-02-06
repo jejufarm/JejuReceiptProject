@@ -31,6 +31,7 @@ public class MoreFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_more, container, false);
         binding.setViewModel(MoreFragmentViewModel.getInstance());
+        getActivity().setTitle("앱 설정 화면");
         return binding.getRoot();
     }
 }

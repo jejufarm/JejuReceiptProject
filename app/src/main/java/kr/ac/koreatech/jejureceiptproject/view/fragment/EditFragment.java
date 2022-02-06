@@ -41,7 +41,7 @@ public class EditFragment extends Fragment {
         EditFragmentViewModel.setInstnace(binding);
         binding.setViewModel(EditFragmentViewModel.getInstance());
         binding.setCactusRecyclerViewModel(CactusRecyclerViewModel.getInstance());
-
+        getActivity().setTitle("제품 수정 화면");
         mItemTouchHelper = new ItemTouchHelper(new ItemTouchHelperCallback((CactusRecyclerViewModel.getInstance().getAdatper())));
         mItemTouchHelper.attachToRecyclerView(binding.cactusRecyclerView);
         binding.cactusRecyclerView.addOnItemTouchListener(
