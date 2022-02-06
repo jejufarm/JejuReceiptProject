@@ -167,19 +167,21 @@ public class MainFragmentViewModel {
             }
             case R.id.dialog_button_enter: {
                 if (selectCactusDTO != null && !getSelectCount().get().equals("")) {
-                    BasketRecyclerViewModel.getInstance().append(new BasketDTO(selectCactusDTO.getUid(), selectCactusDTO.getName(), selectCactusDTO.getPrice(), Integer.parseInt(getSelectCount().get())));
+                    if(BasketRecyclerViewModel.getInstance().getItems().size() < 24) {
+                        BasketRecyclerViewModel.getInstance().append(new BasketDTO(selectCactusDTO.getUid(), selectCactusDTO.getName(), selectCactusDTO.getPrice(), Integer.parseInt(getSelectCount().get())));
 
-                    selectCactusDTO = null;
-                    this.setSelectCactus(null);
-                    this.selectCount.set("");
+                        selectCactusDTO = null;
+                        this.setSelectCactus(null);
+                        this.selectCount.set("");
 
-                    Integer count = 0, total = 0;
-                    for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
-                        count += cactus.getCount();
-                        total += cactus.getTotal();
+                        Integer count = 0, total = 0;
+                        for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
+                            count += cactus.getCount();
+                            total += cactus.getTotal();
+                        }
+                        setSumTotal(total.toString());
+                        setSumCount(count.toString());
                     }
-                    setSumTotal(total.toString());
-                    setSumCount(count.toString());
                 }
                 break;
             }

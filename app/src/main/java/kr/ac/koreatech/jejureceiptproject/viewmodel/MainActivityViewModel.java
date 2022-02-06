@@ -38,12 +38,6 @@ public class MainActivityViewModel {
 
     public MainActivityViewModel() {
         isMainActive.set(true);
-        FragmentManager fm = MainActivityViewModel.mainActivity.getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.fragment1, myFragment[0]);
-        fragmentTransaction.add(R.id.fragment1, myFragment[1]);
-        fragmentTransaction.add(R.id.fragment1, myFragment[2]);
-        fragmentTransaction.commit();
     }
 
     //region getter setter

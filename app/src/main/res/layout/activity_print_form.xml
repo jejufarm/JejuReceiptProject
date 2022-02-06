@@ -54,13 +54,13 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="5"
+                    android:layout_weight="3"
                     android:background="@drawable/border_all"
                     android:gravity="center"
-                    android:text="거 래 명 세 서"
-
+                    android:text="거  래  명  세  서"
+                    android:textStyle="normal"
                     android:textColor="@color/black"
-                    android:textSize="100sp" />
+                    android:textSize="50sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                         android:gravity="center"
                         android:text="상호"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -94,7 +94,7 @@
                         android:gravity="center"
                         android:text="제주농원"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -104,7 +104,7 @@
                         android:gravity="center"
                         android:text="성      명"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -114,7 +114,7 @@
                         android:gravity="center"
                         android:text="최창수 (인)"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -133,7 +133,7 @@
                         android:gravity="center"
                         android:text="010-3399-7137"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -143,7 +143,7 @@
                         android:gravity="center"
                         android:text="계      좌"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -153,7 +153,7 @@
                         android:gravity="center"
                         android:text="농협 217-05252-005911"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -172,7 +172,7 @@
                         android:gravity="center"
                         android:text="작 성 년 월 일"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -182,7 +182,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.now_time}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -204,7 +204,7 @@
                         android:layout_weight="7"
                         android:background="@color/white"
                         android:gravity="center"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -214,7 +214,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.sum_count}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -224,7 +224,7 @@
                         android:gravity="center"
                         android:text="합 계"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -234,7 +234,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.sum_total}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -253,7 +253,7 @@
                         android:gravity="center"
                         android:text="번호"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -263,7 +263,7 @@
                         android:gravity="center"
                         android:text="품명"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -273,7 +273,7 @@
                         android:gravity="center"
                         android:text="수량"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -283,7 +283,7 @@
                         android:gravity="center"
                         android:text="단가"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -293,7 +293,7 @@
                         android:gravity="center"
                         android:text="가격"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -303,7 +303,7 @@
                         android:gravity="center"
                         android:text="비고"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
                 <!--    TODO: 데이터 목록    -->
@@ -322,7 +322,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(0).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -332,7 +332,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(0).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -342,7 +342,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(0).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -352,7 +352,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(0).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -362,7 +362,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(0).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -372,7 +372,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(0).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -391,7 +391,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(1).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -401,7 +401,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(1).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -411,7 +411,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(1).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -421,7 +421,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(1).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -431,7 +431,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(1).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -441,7 +441,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(1).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -460,7 +460,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(2).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -470,7 +470,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(2).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -480,7 +480,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(2).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -490,7 +490,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(2).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -500,7 +500,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(2).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -510,7 +510,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(2).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -529,7 +529,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(3).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -539,7 +539,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(3).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -549,7 +549,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(3).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -559,7 +559,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(3).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -569,7 +569,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(3).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -579,7 +579,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(3).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -598,7 +598,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(4).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -608,7 +608,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(4).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -618,7 +618,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(4).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -628,7 +628,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(4).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -638,7 +638,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(4).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -648,7 +648,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(4).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -667,7 +667,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(5).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -677,7 +677,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(5).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -687,7 +687,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(5).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -697,7 +697,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(5).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -707,7 +707,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(5).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -717,7 +717,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(5).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -736,7 +736,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(6).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -746,7 +746,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(6).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -756,7 +756,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(6).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -766,7 +766,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(6).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -776,7 +776,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(6).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -786,7 +786,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(6).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -805,7 +805,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(7).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -815,7 +815,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(7).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -825,7 +825,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(7).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -835,7 +835,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(7).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -845,7 +845,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(7).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -855,7 +855,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(7).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -874,7 +874,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(8).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -884,7 +884,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(8).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -894,7 +894,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(8).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -904,7 +904,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(8).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -914,7 +914,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(8).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -924,7 +924,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(8).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -943,7 +943,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(9).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -953,7 +953,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(9).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -963,7 +963,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(9).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -973,7 +973,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(9).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -983,7 +983,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(9).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -993,7 +993,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(9).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1012,7 +1012,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(10).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1022,7 +1022,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(10).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1032,7 +1032,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(10).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1042,7 +1042,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(10).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1052,7 +1052,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(10).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1062,7 +1062,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(10).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1081,7 +1081,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(11).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1091,7 +1091,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(11).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1101,7 +1101,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(11).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1111,7 +1111,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(11).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1121,7 +1121,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(11).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1131,7 +1131,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(11).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1150,7 +1150,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(12).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1160,7 +1160,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(12).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1170,7 +1170,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(12).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1180,7 +1180,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(12).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1190,7 +1190,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(12).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1200,7 +1200,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(12).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1219,7 +1219,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(13).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1229,7 +1229,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(13).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1239,7 +1239,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(13).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1249,7 +1249,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(13).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1259,7 +1259,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(13).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1269,7 +1269,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(13).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1288,7 +1288,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(14).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1298,7 +1298,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(14).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1308,7 +1308,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(14).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1318,7 +1318,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(14).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1328,7 +1328,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(14).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1338,7 +1338,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(14).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1357,7 +1357,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(15).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1367,7 +1367,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(15).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1377,7 +1377,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(15).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1387,7 +1387,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(15).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1397,7 +1397,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(15).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1407,7 +1407,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(15).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1426,7 +1426,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(16).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1436,7 +1436,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(16).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1446,7 +1446,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(16).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1456,7 +1456,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(16).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1466,7 +1466,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(16).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1476,7 +1476,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(16).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1495,7 +1495,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(17).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1505,7 +1505,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(17).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1515,7 +1515,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(17).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1525,7 +1525,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(17).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1535,7 +1535,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(17).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1545,7 +1545,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(17).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1564,7 +1564,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(18).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1574,7 +1574,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(18).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1584,7 +1584,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(18).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1594,7 +1594,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(18).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1604,7 +1604,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(18).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1614,7 +1614,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(18).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1633,7 +1633,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(19).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1643,7 +1643,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(19).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1653,7 +1653,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(19).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1663,7 +1663,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(19).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1673,7 +1673,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(19).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1683,7 +1683,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(19).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1702,7 +1702,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(20).order.toString()}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1712,7 +1712,7 @@
                         android:gravity="center"
                         android:text="@{datas.get(20).name}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1722,7 +1722,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(20).count)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1732,7 +1732,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(20).price)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1742,7 +1742,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.format(datas.get(20).total)}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1752,11 +1752,216 @@
                         android:gravity="center"
                         android:text="@{datas.get(20).extra}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
 
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(21).order.toString()}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(21).name}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(21).count)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(21).price)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(21).total)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(21).extra}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(22).order.toString()}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(22).name}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(22).count)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(22).price)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(22).total)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(22).extra}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(23).order.toString()}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(23).name}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(23).count)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(23).price)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(23).total)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(23).extra}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
                 <!--    데이터 끝     -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1773,7 +1978,7 @@
                         android:gravity="center"
                         android:text="경기도 고양시 덕양구 서오릉로 799"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -1790,7 +1995,7 @@
                         android:background="@drawable/border_all"
                         android:gravity="center"
                         android:text=""
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1800,7 +2005,7 @@
                         android:gravity="center"
                         android:text="합            계"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1810,7 +2015,7 @@
                         android:gravity="center"
                         android:text="\"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -1820,7 +2025,7 @@
                         android:gravity="center"
                         android:text="@{viewModel.sum_total}"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
 
                 </LinearLayout>

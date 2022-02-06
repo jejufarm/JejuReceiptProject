@@ -1,5 +1,7 @@
 package kr.ac.koreatech.jejureceiptproject.adapter.recyclerview;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +18,7 @@ import kr.ac.koreatech.jejureceiptproject.databinding.ControllCactusFormBinding;
 import kr.ac.koreatech.jejureceiptproject.domain.CactusDTO;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.CactusRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.EditFragmentViewModel;
+import kr.ac.koreatech.jejureceiptproject.viewmodel.MainActivityViewModel;
 
 public class CactusRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements ItemTouchHelperListener {
     private CactusRecyclerViewModel viewModel;
@@ -73,15 +76,27 @@ public class CactusRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
     @Override
     public void onItemSwipe(int position) {
         List<CactusDTO> item = viewModel.getItems();
-        try {
-            if (SQLiteControl.getInstance().delete(item.get(position))) {
-                item.remove(position);
-                notifyItemRemoved(position);
-                EditFragmentViewModel.getInstance().cancelButton(null);
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivityViewModel.mainActivity);
+        builder.setTitle("항목 삭제");
+        builder.setTitle(item.get(position).getName() + " " + item.get(position).getPrice() + " 을(를) 정말로 삭제하시겠습니까?");
+
+        builder.setPositiveButton("예", (dialogInterface, i) -> {
+            try {
+                if (SQLiteControl.getInstance().delete(item.get(position))) {
+                    item.remove(position);
+                    notifyItemRemoved(position);
+                    EditFragmentViewModel.getInstance().cancelButton(null);
+                }
+
+            } catch (Exception ex) {
+                ex.printStackTrace();
             }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        });
+
+        builder.setNegativeButton("취소", (dialogInterface, i) -> {
+            notifyItemChanged(position);
+        });
+        builder.create().show();
     }
 
 

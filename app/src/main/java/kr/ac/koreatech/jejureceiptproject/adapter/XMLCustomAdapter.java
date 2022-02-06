@@ -38,13 +38,7 @@ public class XMLCustomAdapter {
 
         FragmentManager fm = MainActivityViewModel.mainActivity.getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        for (Fragment frag : MainActivityViewModel.myFragment) {
-            if (frag == fragment)
-                fragmentTransaction.show(frag);
-            else
-                fragmentTransaction.hide(frag);
-
-        }
+        fragmentTransaction.replace(R.id.fragment1, fragment);
         fragmentTransaction.commit();
     }
 }

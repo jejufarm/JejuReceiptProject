@@ -63,7 +63,7 @@ public class PrintFormActivity extends AppCompatActivity {
         }
         binding.setViewModel(new PrintFormViewModel(count, total));
 
-        for (int i = idx; i < 21; i++) {
+        for (int i = idx; i < 24; i++) {
             items.add(new ReceiptDTO(i + 1, "", null, null, null, ""));
         }
         binding.setDatas(items);
@@ -146,7 +146,7 @@ public class PrintFormActivity extends AppCompatActivity {
             Intent intent23 = new Intent();
             ArrayList<Uri> imageUris = new ArrayList<>();
             imageUris.add(getImageUri(this, bitmap));
-            imageUris.add(getImageUri(this, bitmap));
+//            imageUris.add(getImageUri(this, bitmap));
             intent23.setAction(Intent.ACTION_SEND_MULTIPLE);
             intent23.putParcelableArrayListExtra(Intent.EXTRA_STREAM, imageUris);
             intent23.setType("image/*");
