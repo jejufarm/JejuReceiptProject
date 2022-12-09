@@ -52,7 +52,7 @@ public class PrintFormActivity extends AppCompatActivity {
         }
         binding.setViewModel(new PrintFormViewModel(count, total));
 
-        for (int i = idx; i < 25; i++) {
+        for (int i = idx; i < 24; i++) {
             items.add(new ReceiptDTO(i + 1, "", null, null, null, ""));
         }
         binding.setDatas(items);

@@ -163,7 +163,7 @@ public class MainFragmentViewModel {
             }
             case R.id.dialog_button_enter: {
                 if (selectCactusDTO != null && !getSelectCount().get().equals("")) {
-                    if (BasketRecyclerViewModel.getInstance().getItems().size() < 25) {
+                    if (BasketRecyclerViewModel.getInstance().getItems().size() < 24) {
                         BasketRecyclerViewModel.getInstance().append(new BasketDTO(selectCactusDTO.getUid(), selectCactusDTO.getName(), selectCactusDTO.getCount(), selectCactusDTO.getPrice(), Integer.parseInt(getSelectCount().get())));
 
                         selectCactusDTO = null;
