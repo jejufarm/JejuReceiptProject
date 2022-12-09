@@ -110,20 +110,26 @@ public class CactusRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
 
         public void bind(CactusRecyclerViewModel viewModel, int pos) {
             binding.setViewModel(viewModel);
-            binding.setDecimal(new Transaction(viewModel.getPrice(pos)));
+            binding.setDecimal(new Transaction(viewModel.getCount(pos), viewModel.getPrice(pos)));
             binding.setPos(pos);
             binding.executePendingBindings();
         }
 
         public class Transaction {
             private int price;
+            private int count;
 
-            public Transaction(int price) {
+            public Transaction(int count, int price) {
+                this.count = count;
                 this.price = price;
             }
 
             public String getPrice() {
                 return new DecimalFormat("###,###").format(price);
+            }
+
+            public String getCount() {
+                return new DecimalFormat("###,###").format(count);
             }
         }
     }

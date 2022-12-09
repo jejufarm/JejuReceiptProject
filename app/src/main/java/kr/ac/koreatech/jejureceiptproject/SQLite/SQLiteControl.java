@@ -43,7 +43,6 @@ public class SQLiteControl implements Serializable {
                     data.put(c.getColumnName(i), c.getString(i));
                     temp.add(data);
                 }
-                System.out.println("dd");
 //                temp.add(new CactusDTO(c.getLong(0), c.getString(1), c.getInt(2)));
             } while (c.moveToNext());
         }
@@ -57,14 +56,14 @@ public class SQLiteControl implements Serializable {
         Cursor c = sqlite.rawQuery("SELECT * FROM cactus ORDER BY `order` ASC;", null);
         if (c.moveToFirst()) {
             do {
-                temp.add(new CactusDTO(c.getInt(0), c.getString(1), c.getInt(2), c.getInt(3)));
+                temp.add(new CactusDTO(c.getInt(0), c.getString(1), c.getInt(2), c.getInt(3), c.getInt(4)));
             } while (c.moveToNext());
         }
         c.close();
         return temp;
     }
 
-    public boolean insert(int order, String name, Integer price) {
+    public boolean insert(int order, String name, Integer count, Integer price) {
         try {
             if (order < 0) {
                 List<Map<String, String>> temp = GetData("SELECT count(*) FROM cactus;");
@@ -72,8 +71,8 @@ public class SQLiteControl implements Serializable {
             }
 
 
-            return executeSQL("INSERT INTO cactus(`name`, `price`, `order`) VALUES " +
-                    "(\"" + name + "\",'" + price + "'," + order + ");");
+            return executeSQL("INSERT INTO cactus(`name`, `count` , `price`, `order`) VALUES " +
+                    "(\"" + name + "\",'" + count + "', '" + price + "'," + order + ");");
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -99,7 +98,7 @@ public class SQLiteControl implements Serializable {
         try {
 
             return executeSQL("UPDATE cactus SET name = '" + cactus.getName() + "'," +
-                    "price = " + cactus.getPrice() + " WHERE uid = " + cactus.getUid() + ";");
+                    "price = " + cactus.getPrice() + ", count = " + cactus.getCount() + " WHERE uid = " + cactus.getUid() + ";");
         } catch (Exception ex) {
             ex.printStackTrace();
             throw ex;

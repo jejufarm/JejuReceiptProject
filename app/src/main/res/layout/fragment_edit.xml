@@ -41,11 +41,21 @@
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="7"
+                    android:layout_weight="8"
                     android:hint="제품 이름"
                     android:imeOptions="actionDone"
                     android:singleLine="true"
                     android:text="@={viewModel.cactusName}" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:hint="수량"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="@={viewModel.cactusCount}" />
 
                 <EditText
                     android:layout_width="0dp"

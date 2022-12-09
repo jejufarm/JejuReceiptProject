@@ -1,5 +1,7 @@
 package kr.ac.koreatech.jejureceiptproject.viewmodel;
 
+import android.annotation.SuppressLint;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +36,7 @@ public class CactusRecyclerViewModel {
 
     private void test() {
         for (int i = 0; i < 10; i++) {
-            items.add(new CactusDTO(i, "테스트" + i, i * 10000 + 10000, i));
+            items.add(new CactusDTO(i, "테스트" + i, 0, i * 10000 + 10000, i));
         }
         onCreate();
     }
@@ -61,6 +63,10 @@ public class CactusRecyclerViewModel {
 
     public Integer getPrice(int pos) {
         return items.get(pos).getPrice();
+    }
+
+    public Integer getCount(int pos) {
+        return items.get(pos).getCount();
     }
 
     public List<CactusDTO> getItem() {
@@ -99,6 +105,7 @@ public class CactusRecyclerViewModel {
         return true;
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void getCacutList() {
         try {
             items.clear();

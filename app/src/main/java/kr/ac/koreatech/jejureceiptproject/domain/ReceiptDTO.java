@@ -3,17 +3,17 @@ package kr.ac.koreatech.jejureceiptproject.domain;
 public class ReceiptDTO {
     private Integer order;
     private String name;
+    private Integer boxCount;
     private Integer count;
     private Integer price;
-    private Integer total;
     private String extra;
 
-    public ReceiptDTO(Integer order, String name, Integer count, Integer price, Integer total, String extra) {
+    public ReceiptDTO(Integer order, String name, Integer boxCount, Integer count, Integer price, String extra) {
         this.order = order;
         this.name = name;
+        this.boxCount = boxCount;
         this.count = count;
         this.price = price;
-        this.total = total;
         this.extra = extra;
     }
 
@@ -33,6 +33,14 @@ public class ReceiptDTO {
         this.name = name;
     }
 
+    public Integer getBoxCount() {
+        return boxCount;
+    }
+
+    public void setBoxCount(Integer boxCount) {
+        this.boxCount = boxCount;
+    }
+
     public Integer getCount() {
         return count;
     }
@@ -47,14 +55,6 @@ public class ReceiptDTO {
 
     public void setPrice(Integer price) {
         this.price = price;
-    }
-
-    public Integer getTotal() {
-        return total;
-    }
-
-    public void setTotal(Integer total) {
-        this.total = total;
     }
 
     public String getExtra() {

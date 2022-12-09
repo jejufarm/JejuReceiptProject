@@ -27,6 +27,7 @@ public class EditFragmentViewModel {
     private ObservableField<Boolean> isEdit = new ObservableField<>();
     private ObservableField<String> cactusName = new ObservableField<>();
     private ObservableField<String> cactusPrice = new ObservableField<>();
+    private ObservableField<String> cactusCount = new ObservableField<>();
 
     public EditFragmentViewModel() {
         isEdit.set(false);
@@ -56,9 +57,19 @@ public class EditFragmentViewModel {
         this.cactusPrice.set(cactusPrice);
     }
 
+    public ObservableField<String> getCactusCount() {
+        return cactusCount;
+    }
+
+    public void setCactusCount(String cactusCount) {
+        this.cactusCount.set(cactusCount);
+    }
+
+
     public void setSelectedPos(int pos) {
         this.selected_cactus = CactusRecyclerViewModel.getInstance().getItem(pos);
         setCactusName(selected_cactus.getName());
+        setCactusCount(selected_cactus.getCount() + "");
         setCactusPrice(selected_cactus.getPrice() + "");
     }
 
@@ -68,9 +79,10 @@ public class EditFragmentViewModel {
             if (getCactusName().get().equals("") || Integer.parseInt(getCactusPrice().get()) < 0)
                 return;
 
-            if (SQLiteControl.getInstance().insert(-1, getCactusName().get(), Integer.parseInt(getCactusPrice().get()))) {
+            if (SQLiteControl.getInstance().insert(-1, getCactusName().get(), Integer.parseInt(getCactusCount().get()), Integer.parseInt(getCactusPrice().get()))) {
                 cactusName.set("");
                 cactusPrice.set("");
+                cactusCount.set("");
                 CactusRecyclerViewModel.getInstance().getCacutList();
                 binding.cactusRecyclerView.scrollToPosition(CactusRecyclerViewModel.getInstance().getAdatper().getItemCount() - 1);
             }
@@ -81,9 +93,10 @@ public class EditFragmentViewModel {
 
     public void updateButton(View v) {
         try {
-            if (getCactusName().get().equals("") || Integer.parseInt(getCactusPrice().get()) < 0)
+            if (getCactusName().get().equals("") || Integer.parseInt(getCactusPrice().get()) < 0 || Integer.parseInt(getCactusCount().get()) < 0)
                 return;
             selected_cactus.setName(getCactusName().get());
+            selected_cactus.setCount(Integer.parseInt(getCactusCount().get()));
             selected_cactus.setPrice(Integer.parseInt(getCactusPrice().get()));
             if (SQLiteControl.getInstance().update(selected_cactus)) {
                 cancelButton(v);
@@ -101,6 +114,7 @@ public class EditFragmentViewModel {
             isEdit.set(false);
             selected_cactus = null;
             setCactusPrice("");
+            setCactusCount("");
             setCactusName("");
         }
     }

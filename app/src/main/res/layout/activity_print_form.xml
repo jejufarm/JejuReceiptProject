@@ -220,9 +220,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="합 계"
+                        android:text=""
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -230,9 +229,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="7"
-                        android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.sum_total}"
+                        android:text=""
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -271,7 +269,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="수량"
+                        android:text="박스"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -281,7 +279,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="단가"
+                        android:text="수량"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -291,7 +289,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="가격"
+                        android:text="단가"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -340,7 +338,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(0).count)}"
+                        android:text="@{viewModel.format(datas.get(0).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -350,7 +348,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(0).price)}"
+                        android:text="@{viewModel.format(datas.get(0).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -360,7 +358,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(0).total)}"
+                        android:text="@{viewModel.format(datas.get(0).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -409,7 +407,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(1).count)}"
+                        android:text="@{viewModel.format(datas.get(1).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -419,7 +417,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(1).price)}"
+                        android:text="@{viewModel.format(datas.get(1).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -429,7 +427,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(1).total)}"
+                        android:text="@{viewModel.format(datas.get(1).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -478,7 +476,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(2).count)}"
+                        android:text="@{viewModel.format(datas.get(2).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -488,7 +486,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(2).price)}"
+                        android:text="@{viewModel.format(datas.get(2).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -498,7 +496,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(2).total)}"
+                        android:text="@{viewModel.format(datas.get(2).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -547,7 +545,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(3).count)}"
+                        android:text="@{viewModel.format(datas.get(3).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -557,7 +555,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(3).price)}"
+                        android:text="@{viewModel.format(datas.get(3).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -567,7 +565,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(3).total)}"
+                        android:text="@{viewModel.format(datas.get(3).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -616,7 +614,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(4).count)}"
+                        android:text="@{viewModel.format(datas.get(4).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -626,7 +624,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(4).price)}"
+                        android:text="@{viewModel.format(datas.get(4).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -636,7 +634,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(4).total)}"
+                        android:text="@{viewModel.format(datas.get(4).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -685,7 +683,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(5).count)}"
+                        android:text="@{viewModel.format(datas.get(5).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -695,7 +693,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(5).price)}"
+                        android:text="@{viewModel.format(datas.get(5).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -705,7 +703,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(5).total)}"
+                        android:text="@{viewModel.format(datas.get(5).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -754,7 +752,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(6).count)}"
+                        android:text="@{viewModel.format(datas.get(6).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -764,7 +762,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(6).price)}"
+                        android:text="@{viewModel.format(datas.get(6).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -774,7 +772,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(6).total)}"
+                        android:text="@{viewModel.format(datas.get(6).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -823,7 +821,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(7).count)}"
+                        android:text="@{viewModel.format(datas.get(7).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -833,7 +831,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(7).price)}"
+                        android:text="@{viewModel.format(datas.get(7).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -843,7 +841,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(7).total)}"
+                        android:text="@{viewModel.format(datas.get(7).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -892,7 +890,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(8).count)}"
+                        android:text="@{viewModel.format(datas.get(8).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -902,7 +900,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(8).price)}"
+                        android:text="@{viewModel.format(datas.get(8).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -912,7 +910,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(8).total)}"
+                        android:text="@{viewModel.format(datas.get(8).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -961,7 +959,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(9).count)}"
+                        android:text="@{viewModel.format(datas.get(9).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -971,7 +969,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(9).price)}"
+                        android:text="@{viewModel.format(datas.get(9).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -981,7 +979,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(9).total)}"
+                        android:text="@{viewModel.format(datas.get(9).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1030,7 +1028,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(10).count)}"
+                        android:text="@{viewModel.format(datas.get(10).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1040,7 +1038,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(10).price)}"
+                        android:text="@{viewModel.format(datas.get(10).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1050,7 +1048,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(10).total)}"
+                        android:text="@{viewModel.format(datas.get(10).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1099,7 +1097,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(11).count)}"
+                        android:text="@{viewModel.format(datas.get(11).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1109,7 +1107,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(11).price)}"
+                        android:text="@{viewModel.format(datas.get(11).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1119,7 +1117,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(11).total)}"
+                        android:text="@{viewModel.format(datas.get(11).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1168,7 +1166,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(12).count)}"
+                        android:text="@{viewModel.format(datas.get(12).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1178,7 +1176,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(12).price)}"
+                        android:text="@{viewModel.format(datas.get(12).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1188,7 +1186,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(12).total)}"
+                        android:text="@{viewModel.format(datas.get(12).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1237,7 +1235,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(13).count)}"
+                        android:text="@{viewModel.format(datas.get(13).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1247,7 +1245,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(13).price)}"
+                        android:text="@{viewModel.format(datas.get(13).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1257,7 +1255,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(13).total)}"
+                        android:text="@{viewModel.format(datas.get(13).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1306,7 +1304,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(14).count)}"
+                        android:text="@{viewModel.format(datas.get(14).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1316,7 +1314,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(14).price)}"
+                        android:text="@{viewModel.format(datas.get(14).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1326,7 +1324,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(14).total)}"
+                        android:text="@{viewModel.format(datas.get(14).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1375,7 +1373,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(15).count)}"
+                        android:text="@{viewModel.format(datas.get(15).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1385,7 +1383,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(15).price)}"
+                        android:text="@{viewModel.format(datas.get(15).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1395,7 +1393,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(15).total)}"
+                        android:text="@{viewModel.format(datas.get(15).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1444,7 +1442,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(16).count)}"
+                        android:text="@{viewModel.format(datas.get(16).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1454,7 +1452,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(16).price)}"
+                        android:text="@{viewModel.format(datas.get(16).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1464,7 +1462,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(16).total)}"
+                        android:text="@{viewModel.format(datas.get(16).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1513,7 +1511,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(17).count)}"
+                        android:text="@{viewModel.format(datas.get(17).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1523,7 +1521,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(17).price)}"
+                        android:text="@{viewModel.format(datas.get(17).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1533,7 +1531,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(17).total)}"
+                        android:text="@{viewModel.format(datas.get(17).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1582,7 +1580,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(18).count)}"
+                        android:text="@{viewModel.format(datas.get(18).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1592,7 +1590,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(18).price)}"
+                        android:text="@{viewModel.format(datas.get(18).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1602,7 +1600,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(18).total)}"
+                        android:text="@{viewModel.format(datas.get(18).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1651,7 +1649,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(19).count)}"
+                        android:text="@{viewModel.format(datas.get(19).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1661,7 +1659,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(19).price)}"
+                        android:text="@{viewModel.format(datas.get(19).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1671,7 +1669,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(19).total)}"
+                        android:text="@{viewModel.format(datas.get(19).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1720,7 +1718,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(20).count)}"
+                        android:text="@{viewModel.format(datas.get(20).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1730,7 +1728,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(20).price)}"
+                        android:text="@{viewModel.format(datas.get(20).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1740,7 +1738,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(20).total)}"
+                        android:text="@{viewModel.format(datas.get(20).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1789,7 +1787,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(21).count)}"
+                        android:text="@{viewModel.format(datas.get(21).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1799,7 +1797,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(21).price)}"
+                        android:text="@{viewModel.format(datas.get(21).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1809,7 +1807,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(21).total)}"
+                        android:text="@{viewModel.format(datas.get(21).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1858,7 +1856,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(22).count)}"
+                        android:text="@{viewModel.format(datas.get(22).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1868,7 +1866,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(22).price)}"
+                        android:text="@{viewModel.format(datas.get(22).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1878,7 +1876,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(22).total)}"
+                        android:text="@{viewModel.format(datas.get(22).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1927,7 +1925,7 @@
                         android:layout_weight="2"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(23).count)}"
+                        android:text="@{viewModel.format(datas.get(23).boxCount)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1937,7 +1935,7 @@
                         android:layout_weight="3"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(23).price)}"
+                        android:text="@{viewModel.format(datas.get(23).count)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1947,7 +1945,7 @@
                         android:layout_weight="4"
                         android:background="@drawable/border_all"
                         android:gravity="center"
-                        android:text="@{viewModel.format(datas.get(23).total)}"
+                        android:text="@{viewModel.format(datas.get(23).price)}"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -1962,6 +1960,76 @@
                         android:textSize="16sp" />
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(24).order.toString()}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(24).name}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(24).boxCount)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(24).count)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{viewModel.format(datas.get(24).price)}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_all"
+                        android:gravity="center"
+                        android:text="@{datas.get(24).extra}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
                 <!--    데이터 끝     -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1981,54 +2049,54 @@
                         android:textSize="16sp" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:weightSum="19">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="19">-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text=""
-                        android:textSize="16sp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:background="@drawable/border_all"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text=""-->
+<!--                        android:textSize="16sp" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="합            계"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:background="@drawable/border_all"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="합            계"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="16sp" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="\"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:background="@drawable/border_all"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="\"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="16sp" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="10"
-                        android:background="@drawable/border_all"
-                        android:gravity="center"
-                        android:text="@{viewModel.sum_total}"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="10"-->
+<!--                        android:background="@drawable/border_all"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@{viewModel.sum_total}"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="16sp" />-->
 
 
-                </LinearLayout>
+<!--                </LinearLayout>-->
 
             </LinearLayout>
         </LinearLayout>

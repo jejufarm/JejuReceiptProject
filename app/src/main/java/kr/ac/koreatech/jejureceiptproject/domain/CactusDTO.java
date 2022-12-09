@@ -3,6 +3,7 @@ package kr.ac.koreatech.jejureceiptproject.domain;
 public class CactusDTO {
     private Integer uid;
     private String name;
+    private Integer count;
     private Integer price;
     private Integer order;
 
@@ -10,12 +11,20 @@ public class CactusDTO {
 
     }
 
-
-    public CactusDTO(Integer uid, String name, Integer price, Integer order) {
+    public CactusDTO(Integer uid, String name, Integer count, Integer price, Integer order) {
         this.uid = uid;
         this.name = name;
+        this.count = count;
         this.price = price;
         this.order = order;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
     }
 
     public Integer getUid() {

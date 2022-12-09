@@ -29,6 +29,7 @@ public class SQLiteHelper extends android.database.sqlite.SQLiteOpenHelper imple
         String create_query = "CREATE TABLE if not exists `cactus`(" +
                 "`uid` INTEGER PRIMARY KEY autoincrement," +
                 "`name` varchar(100) NOT NULL DEFAULT ''," +
+                "`count` INTEGER NOT NULL," +
                 "`price` INTEGER NOT NULL," +
                 "`order` INTEGER NOT NULL);";
         db.execSQL(create_query);
