@@ -47,7 +47,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2.5"
             android:gravity="center"
-            android:text="@{viewModel.getCount(pos).toString()}"
+            android:text="@{viewModel.getSelect(pos).toString()}"
             android:textSize="12sp" />
 
         <TextView

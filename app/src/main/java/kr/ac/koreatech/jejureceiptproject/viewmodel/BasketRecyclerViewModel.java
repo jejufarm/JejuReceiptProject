@@ -57,8 +57,8 @@ public class BasketRecyclerViewModel {
         return items.get(pos).getCount();
     }
 
-    public Integer getTotal(int pos) {
-        return items.get(pos).getPrice();
+    public Integer getSelect(int pos) {
+        return items.get(pos).getSelect();
     }
 
     public void append(BasketDTO basketDTO) {

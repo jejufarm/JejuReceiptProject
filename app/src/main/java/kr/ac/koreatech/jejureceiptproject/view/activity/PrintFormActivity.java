@@ -46,13 +46,13 @@ public class PrintFormActivity extends AppCompatActivity {
         int total = 0, count = 0;
         for (BasketDTO item :
                 BasketRecyclerViewModel.getInstance().getItems()) {
-            items.add(new ReceiptDTO(++idx, item.getName(), item.getCount(), item.getPrice(), item.getPrice(), ""));
+            items.add(new ReceiptDTO(++idx, item.getName(), item.getSelect(), item.getCount(), item.getPrice(), ""));
             total += item.getPrice();
-            count += item.getCount();
+            count += item.getSelect();
         }
         binding.setViewModel(new PrintFormViewModel(count, total));
 
-        for (int i = idx; i < 24; i++) {
+        for (int i = idx; i < 25; i++) {
             items.add(new ReceiptDTO(i + 1, "", null, null, null, ""));
         }
         binding.setDatas(items);

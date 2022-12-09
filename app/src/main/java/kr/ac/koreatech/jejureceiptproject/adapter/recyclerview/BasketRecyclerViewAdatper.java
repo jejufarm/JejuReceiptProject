@@ -49,26 +49,20 @@ public class BasketRecyclerViewAdatper extends RecyclerView.Adapter<RecyclerView
 
         public void bind(BasketRecyclerViewModel viewModel, int pos) {
             binding.setViewModel(viewModel);
-            binding.setDecimal(new BasketRecyclerViewAdatper.ItemViewHolder.Transaction(viewModel.getPrice(pos), viewModel.getTotal(pos)));
+            binding.setDecimal(new BasketRecyclerViewAdatper.ItemViewHolder.Transaction(viewModel.getPrice(pos)));
             binding.setPos(pos);
             binding.executePendingBindings();
         }
 
         public class Transaction {
             private int price;
-            private int total;
 
-            public Transaction(int price, int total) {
+            public Transaction(int price) {
                 this.price = price;
-                this.total = total;
             }
 
             public String getPrice() {
                 return new DecimalFormat("###,###").format(price);
-            }
-
-            public String getTotal() {
-                return new DecimalFormat("###,###").format(total);
             }
         }
     }
