@@ -277,15 +277,6 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="6"
-                    android:gravity="center"
-                    android:text="@{viewModel.sumTotal}"
-                    android:textColor="@color/blueFacebook"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView

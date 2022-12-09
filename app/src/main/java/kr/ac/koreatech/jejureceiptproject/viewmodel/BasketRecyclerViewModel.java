@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.BasketRecyclerViewAdatper;
-import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.CactusRecyclerViewAdapter;
 import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
-import kr.ac.koreatech.jejureceiptproject.domain.CactusDTO;
 
 public class BasketRecyclerViewModel {
     private static BasketRecyclerViewModel instance;
@@ -60,7 +58,7 @@ public class BasketRecyclerViewModel {
     }
 
     public Integer getTotal(int pos) {
-        return items.get(pos).getTotal();
+        return items.get(pos).getPrice();
     }
 
     public void append(BasketDTO basketDTO) {

@@ -4,44 +4,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.print.PrintHelper;
 
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.print.PrintAttributes;
 import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-
-import com.vipul.hp_hp.library.Layout_to_Image;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import kr.ac.koreatech.jejureceiptproject.R;
 import kr.ac.koreatech.jejureceiptproject.databinding.ActivityPrintFormBinding;
 import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
 import kr.ac.koreatech.jejureceiptproject.domain.ReceiptDTO;
-import kr.ac.koreatech.jejureceiptproject.util.MediaScanner;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.BasketRecyclerViewModel;
-import kr.ac.koreatech.jejureceiptproject.viewmodel.MainActivityViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.PrintFormViewModel;
 
 public class PrintFormActivity extends AppCompatActivity {
@@ -57,8 +46,8 @@ public class PrintFormActivity extends AppCompatActivity {
         int total = 0, count = 0;
         for (BasketDTO item :
                 BasketRecyclerViewModel.getInstance().getItems()) {
-            items.add(new ReceiptDTO(++idx, item.getName(), item.getCount(), item.getPrice(), item.getTotal(), ""));
-            total += item.getTotal();
+            items.add(new ReceiptDTO(++idx, item.getName(), item.getCount(), item.getPrice(), item.getPrice(), ""));
+            total += item.getPrice();
             count += item.getCount();
         }
         binding.setViewModel(new PrintFormViewModel(count, total));

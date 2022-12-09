@@ -15,16 +15,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import java.text.DecimalFormat;
-
 import kr.ac.koreatech.jejureceiptproject.R;
-import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.BasketRecyclerViewAdatper;
 import kr.ac.koreatech.jejureceiptproject.adapter.recyclerview.RecyclerItemClickListener;
 import kr.ac.koreatech.jejureceiptproject.databinding.FragmentMainBinding;
 import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.BasketRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.CactusRecyclerViewModel;
-import kr.ac.koreatech.jejureceiptproject.viewmodel.CountRecyclerViewModel;
 import kr.ac.koreatech.jejureceiptproject.viewmodel.MainFragmentViewModel;
 
 
@@ -117,7 +113,7 @@ public class MainFragment extends Fragment {
                         Integer count = 0, total = 0;
                         for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
                             count += cactus.getCount();
-                            total += cactus.getTotal();
+                            total += cactus.getPrice();
                         }
                         MainFragmentViewModel.getInstance().setSumTotal(total.toString());
                         MainFragmentViewModel.getInstance().setSumCount(count.toString());

@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 public class BasketDTO extends CactusDTO {
     private Integer count;
-    private Integer total;
+    private Integer price;
 
     public BasketDTO() {
 
@@ -13,7 +13,7 @@ public class BasketDTO extends CactusDTO {
     public BasketDTO(Integer uid, String name, Integer price, Integer count) {
         super(uid, name, count, price, -1);
         this.count = count;
-        this.total = price * count;
+        this.price = price * count;
     }
 
     public Integer getCount() {
@@ -24,12 +24,12 @@ public class BasketDTO extends CactusDTO {
         this.count = count;
     }
 
-    public Integer getTotal() {
-        return total;
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setTotal(Integer total) {
-        this.total = total;
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     @NonNull

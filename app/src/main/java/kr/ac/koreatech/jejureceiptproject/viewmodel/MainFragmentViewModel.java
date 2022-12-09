@@ -3,19 +3,15 @@ package kr.ac.koreatech.jejureceiptproject.viewmodel;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import androidx.databinding.ObservableField;
 
 import java.text.DecimalFormat;
 
 import kr.ac.koreatech.jejureceiptproject.R;
-import kr.ac.koreatech.jejureceiptproject.databinding.FragmentMainBinding;
 import kr.ac.koreatech.jejureceiptproject.domain.BasketDTO;
 import kr.ac.koreatech.jejureceiptproject.domain.CactusDTO;
-import kr.ac.koreatech.jejureceiptproject.view.activity.MainActivity;
 import kr.ac.koreatech.jejureceiptproject.view.activity.PrintFormActivity;
-import kr.ac.koreatech.jejureceiptproject.view.fragment.MainFragment;
 
 
 public class MainFragmentViewModel {
@@ -70,7 +66,7 @@ public class MainFragmentViewModel {
             Integer count = 0, total = 0;
             for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
                 count += cactus.getCount();
-                total += cactus.getTotal();
+                total += cactus.getPrice();
             }
             setSumTotal(total.toString());
             setSumCount(count.toString());
@@ -177,7 +173,7 @@ public class MainFragmentViewModel {
                         Integer count = 0, total = 0;
                         for (BasketDTO cactus : BasketRecyclerViewModel.getInstance().getItems()) {
                             count += cactus.getCount();
-                            total += cactus.getTotal();
+                            total += cactus.getPrice();
                         }
                         setSumTotal(total.toString());
                         setSumCount(count.toString());
