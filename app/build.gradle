@@ -12,7 +12,7 @@ android {
     dataBinding { enabled = true }
 
     defaultConfig {
-        applicationId "kr.ac.koreatech.jejureceiptproject"
+        applicationId "kr.ac.koreatech.jejureceiptauction"
         minSdk 28
         targetSdk 32
         versionCode 1
